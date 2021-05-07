@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: whitesmoke;
+}
+
+html {
+    background-image: linear-gradient(to right bottom, palevioletred, deeppink);
+    height: 100%;
+}
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 2px;
+    background-image: linear-gradient(to right bottom, purple, rgb(211, 11, 211));
+    box-shadow: 0 0 30px 6px rgba(0, 0, 0, .2);
+    
+}
+/* .game--title {
+    animation: infiniteAnimation 1s infinite; 
+    border: 3px solid purple;
+
+} */
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    display: grid;
+    justify-content: center;
+    align-items: center;    
+    cursor: pointer;
+    font-size: 60px;
+
+}
+section {
+    width: fit-content;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.win-message {
+    padding: 5px 0;
+    color: whitesmoke;
+    background-image: linear-gradient(to right bottom, purple, rgb(211, 11, 211));
+    animation: shake 1s ease;
+}
+
+.m-b {
+    margin-bottom: 25px;
+}
+
+.game--restart {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(to right bottom, purple, rgb(211, 11, 211));
+    color: whitesmoke;
+    cursor: pointer;
+
+}
+span {
+    color: purple;
+    font-family: "Permanent Marker", cursive;
+    animation: infiniteAnimation .3s infinite;
+}
+@keyframes infiniteAnimation {
+    0% {
+        transform: skewX(-10deg);
+    }
+    60% {
+        transform: skewX(10deg);
+    }
+    100% {
+        transform: skewX(-10deg);
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
