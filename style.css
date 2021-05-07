@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,200;1,200&family=Orbitron:wght@500&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Bebas Neue';
     color: whitesmoke;
 }
 
@@ -16,13 +19,10 @@ html {
     grid-gap: 2px;
     background-image: linear-gradient(to right bottom, purple, rgb(211, 11, 211));
     box-shadow: 0 0 30px 6px rgba(0, 0, 0, .2);
+    margin: auto;
     
 }
-/* .game--title {
-    animation: infiniteAnimation 1s infinite; 
-    border: 3px solid purple;
 
-} */
 .cell {
     width: 100px;
     height: 100px;
@@ -35,7 +35,7 @@ html {
 
 }
 section {
-    width: fit-content;
+    width: 305px;
     margin: 50px auto;
     text-align: center;
 }
